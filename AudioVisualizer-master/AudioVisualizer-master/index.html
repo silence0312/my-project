@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<meta name="Keywords" content="音乐可视化,webAudio,music,音乐,HTML5,canvas,CSS3,自适应">
+		<meta name="Description" content="利用HTML5 webAudio API 和canvas API以及CSS3制作音乐播放可视化效果">
+		<meta name="Author" content="Qieguo">
+		
+		<title>HTML5 Web Audio Demo</title>
+		<link rel="icon" href="resource/cd_blue.png">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+		
+		<style type="text/css">
+			
+
+		.g-hd,.g-sd,.g-mn,.g-ft{position:absolute;left:0;}
+		.g-hd,.g-ft{width:100%;}
+		.g-sd,.g-mn{top:100px;bottom:50px;_height:100%;overflow:auto;}
+
+		.g-hd{top:0;height:100px;background-color: #00DB00;}
+		.g-sd{width:300px;background-color: #F9F900;bottom: 0;}
+		.g-mn{_position:relative;left:300px;right:0;_top:0;_left:0;_margin-left:300px;background-color: white;bottom: 0;}
+		
+
+		.t-a{text-align: center;font:bold 35px helvetica,arial, sans-serif;color: #999;text-shadow:0.1em 0.1em #333;font-size:}
+		</style>
+
+
+	</head>
+	
+
+	<body>
+		
+
+
+			<div class="g-hd">
+				<p class="t-a">音乐可视化</p>
+			</div>
+			    
+
+			<div class="g-mn">
+				<canvas id="drawCanvas" width="" height=""></canvas>
+			</div>
+
+			<div class="g-sd"></div>	
+
+			<div id="container">
+						<div class="g-sd">
+							<p id="info">HTML5 Audio visualizer</p>
+							<span id="fileIn">
+								Click me to select an audio file.
+							</span>
+							<input type="file" id="uploader"/>
+						</div>						
+			</div>
+				    
+   	
+		<script src="js/loader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
